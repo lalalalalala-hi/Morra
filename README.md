@@ -4,3 +4,6 @@ My name is Teh Jing Ling. I am joining the Reach Malaysia Hackathon 2022. The Mo
 
 Please press this link to run the app:
 http://morra-pied.vercel.app/
+
+How to play?
+<img src="Morra_1.jpg"></img>
