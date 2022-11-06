@@ -1,17 +1,16 @@
 import React from 'react';
+import * as backend from './build/index.main.mjs';
 import AppViews from './views/AppViews.js';
 import DeployerViews from './views/DeployerViews.js';
 import AttacherViews from './views/AttacherViews.js';
-import {renderDOM, renderView} from './views/render.js';
+import { renderDOM, renderView } from './views/render.js';
 import './index.css';
-import * as backend from './build/index.main.mjs';
-import { loadStdlib } from '@reach-sh/stdlib';
+import { loadStdlib , ALGO_MyAlgoConnect as MyAlgoConnect  } from '@reach-sh/stdlib';
 const reach = loadStdlib({
   ...process.env, 
   'REACH_CONNECTOR_MODE': 'ALGO',
 });
 
-import { ALGO_MyAlgoConnect as MyAlgoConnect } from '@reach-sh/stdlib';
 reach.setWalletFallback(reach.walletFallback({
   providerEnv: 'TestNet', MyAlgoConnect }));
 
