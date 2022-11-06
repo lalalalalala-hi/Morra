@@ -6,7 +6,10 @@ import {renderDOM, renderView} from './views/render.js';
 import './index.css';
 import * as backend from './build/index.main.mjs';
 import { loadStdlib } from '@reach-sh/stdlib';
-const reach = loadStdlib(process.env);
+const reach = loadStdlib({
+  ...process.env, 
+  'REACH_CONNECTOR_MODE': 'ALGO',
+});
 
 import { ALGO_MyAlgoConnect as MyAlgoConnect } from '@reach-sh/stdlib';
 reach.setWalletFallback(reach.walletFallback({
