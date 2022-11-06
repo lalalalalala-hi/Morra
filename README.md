@@ -6,4 +6,4 @@ Please press this link to run the app:
 http://morra-pied.vercel.app/
 
 How to play?
-<img src="Morra_1.jpg"></img>
+<img src="public/photo/Morra_1.jpg"></img>
